@@ -1,2 +1,2 @@
 require("icompy98.remap")
-print("from icompy")
+require("icompy98.set")

@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/vbarreras/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["split-term.vim"] = {
+    loaded = true,
+    path = "/home/vbarreras/.local/share/nvim/site/pack/packer/start/split-term.vim",
+    url = "https://github.com/vimlab/split-term.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/vbarreras/.local/share/nvim/site/pack/packer/start/telescope.nvim",

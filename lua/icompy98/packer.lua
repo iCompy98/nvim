@@ -36,8 +36,7 @@ return require('packer').startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
-	use {'prettier/vim-prettier', {run= ':! npm install --frozen-lockfile --production'}}
-
+    
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -47,5 +46,16 @@ return require('packer').startup(function(use)
 }
     
     use 'vimlab/split-term.vim'
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            require("rose-pine").setup()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
+
+    use 'lourenci/github-colors'
+    
 
 end)
